@@ -1,0 +1,221 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Open Sans", sans-serif;
+   color: #444444;
+}
+
+/* === Gradient Background === */
+.gradient-background {
+   background: linear-gradient(300deg, #00bfff, #E0C3C5, #F3EEB6);
+   background-size: 180% 180%;
+   animation: gradient-animation 18s ease infinite;
+ }
+ 
+ @keyframes gradient-animation {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+
+/* === Hero Section === */
+.hero {
+   height: 100vh;
+   width: 100%;
+} 
+
+.hero-title {
+   font-family: "Poppins", sans-serif;
+   color: #093453;
+}
+
+.hero-text {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+.btn-getstarted {
+   background-color: #124265;
+   color: #f0f8ff;
+   font-weight: 700;
+   height: 3.2rem;
+}
+
+.btn-getstarted:hover {
+   background-color: #2378b4;
+   color: #f3f3c3;
+}
+/* === End Hero Section === */
+
+/* === Section Titles === */
+.about, .features, .services, .testimonials, .contact {
+   line-height: 1.5rem;
+   font-family: "Poppins", sans-serif;
+}
+
+.about h2, .features h2, .services h2, .testimonials h2, .contact h2 {
+   padding-top: 1rem;
+   width: 250px;
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin: auto;
+}
+
+.title-line, .icon-line {
+   width: 120px;
+   margin: auto;
+}
+/* === End Section Titles === */
+
+/* === About Section Content === */
+.about-content p {
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.2rem;
+   line-height: 2rem;
+}
+
+.about-content ul {
+   padding: 0 18px;
+   list-style: none;
+}
+
+.about-content ul>li {
+   width: 100%;
+   display: flex;
+   font-size: 1.2rem;
+   padding: 12px 0px;
+}
+
+.about-content ul>li>span {
+   padding-left: 7px;
+}
+
+.about-content ul>li>i {
+   color: #148be0;
+   padding-right: 5px;
+}
+/* === End About Section Content === */
+
+/* === Section Buttons === */
+.read-more, .view-more, .get-started, .send-message, .subscribe {
+   border: 2px solid #148be0;
+   background-color: #148be0;
+   letter-spacing: 1.5px;
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   color: #f0f8ff;
+}
+
+.read-more:hover, .view-more:hover, .get-started:hover, .send-message:hover, .subscribe:hover {
+   background-color: #f0f8ff;
+   border-color: #148be0;
+   color: #148be0;
+}
+/* === End Section Buttons === */
+
+/* === Features Section === */
+.feature-icon {
+   width: 6rem;
+   height: 6rem;
+   background-color: #148be0;
+   border-radius: 0.75rem;
+   color: #f0f8ff;
+}
+
+.features h3 {
+   text-transform: uppercase;
+}
+
+.responsive, .support, .display {
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 1.8rem;   
+}
+/* === End Features Section === */
+
+/* === Testimonials Section === */
+.slide {
+   width: 70%;
+}
+
+.client-image {
+   height: 120px;
+}
+
+.reviews {
+   font-style: italic;   
+}
+
+.carousel-item h4 {
+   color: #148be0;
+}
+
+.carousel .carousel-indicators button.active {
+   background-color: #ffc107;   
+}
+
+.carousel .carousel-indicators button {
+   background-color: #148be0;   
+}
+/* === End Testimonials Section === */
+
+/* === Contact Us Contents === */
+.container-info {
+   padding: 10px 15px;
+   border-radius: 15px;
+   background-color: #124265;
+}
+
+.item-info {
+   width: 100%;
+   margin: 5px 10px;
+   padding: 20px;
+   border-radius: 15px;
+   color: #f0f8ff;
+   background-color: color-mix(in srgb, #00bfff 100%, transparent 70%);
+}
+
+.item-info h3 {
+   font-size: 1.2rem;
+   font-weight: 700;
+   padding: 0;
+   margin-bottom: 5px;
+}
+/* === End Contact Us Contents === */
+
+/* === Footer Section === */
+.form-control {
+   border: 1px solid #124265;
+   border-radius: 25px;
+}
+/* === End Footer Section === */
+
+/* === Media Queries Section === */
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .services-content {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .services-right {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media (min-width: 300px) and (max-width: 575.98px) {
+   .services-content, .services-right {
+      display: flex;
+      flex-direction: column;
+   }
+}
+/* === Media Queries Section === */
